@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cLayoutYakitKarti"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YakitKartiFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="660dp"
+        android:layout_height="459dp"
+        android:background="@drawable/card_design"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewYakitKartiKapat"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="35dp"
+            android:src="@drawable/fi_rr_cross"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonYakitKartiTamamla"
+            android:layout_width="286dp"
+            android:layout_height="27.5dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_rectangle"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="Kaydı Tamamla"
+            android:textAllCaps="false"
+            android:textSize="11.4sp"
+            app:backgroundTint="@color/blue"
+            app:layout_constraintStart_toEndOf="@+id/buttonYakitKartiTemizle"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout31"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/buttonYakitKartiTemizle"
+            android:layout_width="286dp"
+            android:layout_height="27.5dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_rectangle"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="Temizle"
+            android:textAllCaps="false"
+            android:textSize="11.4sp"
+            app:backgroundTint="@color/button_temizle_color_"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout27"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout31"
+            android:layout_width="286.1dp"
+            android:layout_height="38.2dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="2.5dp"
+            android:background="@drawable/password_rectangle"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+            app:layout_constraintTop_toBottomOf="@+id/textView35">
+
+            <EditText
+                android:id="@+id/editTextYakitKartiKartVerilmeTarihi"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:backgroundTint="#1AFFFFFF"
+                android:fontFamily="@font/roboto"
+                android:hint="____ / ____ / ________"
+                android:inputType="date"
+                android:paddingLeft="12.7dp"
+                android:textColor="@color/edittext_textcolor"
+                android:textColorHint="@color/edittext_textcolor"
+                android:textSize="9.5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/view11"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:id="@+id/view11"
+                android:layout_width="1dp"
+                android:layout_height="18.1dp"
+                android:layout_marginStart="8.7dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView2_8"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView2_8"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="9.5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/group_13_5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto"
+            android:text="Yakıt Kartı Zimmeti Verilme Tarihi  *:"
+            android:textColor="@color/edittext_title"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout27"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout30" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout30"
+            android:layout_width="286.1dp"
+            android:layout_height="38.2dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="2.5dp"
+            android:background="@drawable/password_rectangle"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+            app:layout_constraintTop_toBottomOf="@+id/textView34">
+
+            <EditText
+                android:id="@+id/editTextYakitKartiPlaka"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:backgroundTint="#1AFFFFFF"
+                android:fontFamily="@font/roboto"
+                android:hint="Yakıt kartı verilecek aracın plakasını girin"
+                android:maxLength="8"
+                android:paddingLeft="12.7dp"
+                android:textColor="@color/edittext_textcolor"
+                android:textColorHint="@color/edittext_textcolor"
+                android:textSize="9.5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view10"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:id="@+id/view10"
+                android:layout_width="1dp"
+                android:layout_height="18.1dp"
+                android:layout_marginStart="8.7dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView2_7"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView2_7"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="9.5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/group_13_5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout29"
+            android:layout_width="286.1dp"
+            android:layout_height="38.2dp"
+            android:layout_marginStart="18dp"
+            android:background="@drawable/password_rectangle"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout26"
+            app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+            <EditText
+                android:id="@+id/editTextYakitKartiOpMerkezBilgisi"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:backgroundTint="#1AFFFFFF"
+                android:fontFamily="@font/roboto"
+                android:hint="Operasyon merkezi bilgisi girin"
+                android:paddingLeft="12.7dp"
+                android:textColor="@color/edittext_textcolor"
+                android:textColorHint="@color/edittext_textcolor"
+                android:textSize="9.5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view9"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:id="@+id/view9"
+                android:layout_width="1dp"
+                android:layout_height="18.1dp"
+                android:layout_marginStart="8.7dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView2_6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView2_6"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="9.5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/group_1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout28"
+            android:layout_width="286.1dp"
+            android:layout_height="38.2dp"
+            android:layout_marginStart="17.9dp"
+            android:layout_marginTop="2.5dp"
+            android:background="@drawable/password_rectangle"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <EditText
+                android:id="@+id/editTextYakitKartiSirketKodu"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:backgroundTint="#1AFFFFFF"
+                android:fontFamily="@font/roboto"
+                android:hint="Şirket kodunu girin"
+                android:paddingLeft="12.7dp"
+                android:textColor="@color/edittext_textcolor"
+                android:textColorHint="@color/edittext_textcolor"
+                android:textSize="9.5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view8"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="1dp"
+                android:layout_height="18.1dp"
+                android:layout_marginStart="8.7dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView2_5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView2_5"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="9.5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/group_1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout27"
+            android:layout_width="286.1dp"
+            android:layout_height="38.2dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="2.5dp"
+            android:background="@drawable/password_rectangle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <EditText
+                android:id="@+id/editTextYakitKartiKullanimAmaci"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:backgroundTint="#1AFFFFFF"
+                android:fontFamily="@font/roboto"
+                android:hint="Yakıt kartı kullanım amacını girin"
+                android:paddingLeft="12.7dp"
+                android:textColor="@color/edittext_textcolor"
+                android:textColorHint="@color/edittext_textcolor"
+                android:textSize="9.5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view7"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="1dp"
+                android:layout_height="18.1dp"
+                android:layout_marginStart="7.7dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView2_4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView2_4"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="10.5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/group_13_2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="286.1dp"
+            android:layout_height="38.2dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="2.5dp"
+            android:background="@drawable/password_rectangle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <EditText
+                android:id="@+id/editTextYakitKartiVerilmeNedeni"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:backgroundTint="#1AFFFFFF"
+                android:fontFamily="@font/roboto"
+                android:hint="Yakıt kartı teslim nedenini girin"
+                android:paddingLeft="12.7dp"
+                android:textColor="@color/edittext_textcolor"
+                android:textColorHint="@color/edittext_textcolor"
+                android:textSize="9.5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view6"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="1dp"
+                android:layout_height="18.1dp"
+                android:layout_marginStart="7.7dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView2_3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView2_3"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="10.5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/group_13_2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout26"
+            android:layout_width="286.1dp"
+            android:layout_height="38.2dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="2.5dp"
+            android:background="@drawable/password_rectangle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29">
+
+            <EditText
+                android:id="@+id/editTextYakitKartiSicilNo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:backgroundTint="#1AFFFFFF"
+                android:fontFamily="@font/roboto"
+                android:hint="10 haneli sicil numarasını giriniz"
+                android:maxLength="10"
+                android:paddingLeft="12.7dp"
+                android:textColor="@color/edittext_textcolor"
+                android:textColorHint="@color/edittext_textcolor"
+                android:textSize="9.5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view5"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="1dp"
+                android:layout_height="18.1dp"
+                android:layout_marginStart="8.7dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView2_2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView2_2"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="9.5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/group_13_0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto"
+            android:text="Personel Sicil Numarası  *:"
+            android:textColor="@color/edittext_title"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto"
+            android:text="Yakıt Kartı Verilme Nedeni :"
+            android:textColor="@color/edittext_title"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout26" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto"
+            android:text="Kullanım Amacı :"
+            android:textColor="@color/edittext_title"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto"
+            android:text="Yakıt Kartı Numarası  * :"
+            android:textColor="@color/edittext_title"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17.9dp"
+            android:layout_marginTop="19.5dp"
+            android:fontFamily="@font/roboto"
+            android:text="Şirket Kodu :"
+            android:textColor="@color/edittext_title"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17.9dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/roboto"
+            android:text="Operasyon Merkezi Bilgisi :"
+            android:textColor="@color/edittext_title"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout26"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout28" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto"
+            android:text="Araç Plakası  *:"
+            android:textColor="@color/edittext_title"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout29" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="286.1dp"
+            android:layout_height="38.2dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="2.3dp"
+            android:background="@drawable/rectangle_blueframe"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24">
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="0.6dp"
+                android:layout_height="18.1dp"
+                android:layout_marginStart="8.7dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="9.5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/group_13_4" />
+
+
+            <EditText
+                android:id="@+id/editTextYakitKartiYakitKartNo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/roboto"
+                android:hint="Yakıt kartı numarasını girin"
+                android:paddingLeft="12.7dp"
+                android:textColor="@color/edittext_textcolor"
+                android:textColorHint="@color/edittext_textcolor"
+                android:textSize="9.5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view3"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="8.5dp"
+            android:fontFamily="@font/roboto"
+            android:lineSpacingExtra="-2sp"
+            android:text="Bu panelden yakıt kartı teslimi gerçekleştirebilirsiniz"
+            android:textColor="@color/subtitle_2"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/roboto"
+            android:lineSpacingExtra="1sp"
+            android:text="Yakıt Kartı Teslim Ekranı"
+            android:textColor="@color/title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="(*) Doldurulması zorunlu alanlar."
+            android:textColor="#a4a4a4"
+            android:textSize="9.5sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonYakitKartiTemizle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

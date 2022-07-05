@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.enerjisafilo.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_menuyegecis"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/aracZimmetAlmaFragment"
+        android:name="com.example.enerjisafilo.AracZimmetAlmaFragment"
+        android:label="fragment_arac_zimmet_alma"
+        tools:layout="@layout/fragment_arac_zimmet_alma" >
+        <action
+            android:id="@+id/action_zimmet_to_menu"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/aracZimmetAlmaFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.enerjisafilo.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_araczimmetalmagecis"
+            app:destination="@id/aracZimmetAlmaFragment" />
+        <action
+            android:id="@+id/action_aracbilgigecis"
+            app:destination="@id/aracBilgileriFragment" />
+        <action
+            android:id="@+id/action_yakitkartigecis"
+            app:destination="@id/yakitKartiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aracBilgileriFragment"
+        android:name="com.example.enerjisafilo.AracBilgileriFragment"
+        android:label="fragment_arac_bilgileri"
+        tools:layout="@layout/fragment_arac_bilgileri" >
+        <action
+            android:id="@+id/action_aracbilgileri_to_menu"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/aracBilgileriFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/yakitKartiFragment"
+        android:name="com.example.enerjisafilo.YakitKartiFragment"
+        android:label="fragment_yakit_karti"
+        tools:layout="@layout/fragment_yakit_karti" >
+        <action
+            android:id="@+id/action_yakitkarti_to_menu"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/yakitKartiFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

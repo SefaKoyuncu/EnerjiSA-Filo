@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="title">#2e2125</color>
+    <color name="subtitle">#767676</color>
+    <color name="blue">#004794</color>
+    <color name="textcolor">#5e5356</color>
+    <color name="password_background">#08000000</color>
+    <color name="remember_me">#a1a1a1</color>
+    <color name="company_sign">#9e9e9e</color>
+    <color name="subtitle_2">#767676</color>
+    <color name="edittext_title">#3a3a3a</color>
+    <color name="edittext_textcolor">#a4a4a4</color>
+    <color name="button_temizle_color_">#940000</color>
+    <color name="linecolor">#a3acb9</color>
+    <color name="yesil">#76ee59</color>
+
+
+
+
+</resources>

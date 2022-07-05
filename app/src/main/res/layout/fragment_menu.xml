@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cLayoutMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="660dp"
+        android:layout_height="211dp"
+        android:background="@drawable/card_design"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cLYakıtKartıTeslimi"
+            android:layout_width="286dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/menu_button_design"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cLAracBilgisiGirisi">
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="87.8dp"
+                android:src="@drawable/vector_4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7.5dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:text="Yakıt Kartı Teslimi"
+                android:textColor="#ffffff"
+                android:textSize="9.5sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView12"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cLIkameAracTeslimi"
+            android:layout_width="286dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/menu_button_design"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cLYakıtKartıTeslimi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cLAracDegisimi">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="18dp"
+                android:layout_height="14.5dp"
+                android:layout_marginStart="87.8dp"
+                android:src="@drawable/vector_6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7.5dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:text="İkame Araç Teslimi"
+                android:textColor="#ffffff"
+                android:textSize="9.5sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView11"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cLAracBilgisiGirisi"
+            android:layout_width="286dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/menu_button_design"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cLAracZimmetAlma">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="18dp"
+                android:layout_height="14.7dp"
+                android:layout_marginStart="87.8dp"
+                android:src="@drawable/vector_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7.5dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:text="Araç Bilgisi Girişi"
+                android:textColor="#ffffff"
+                android:textSize="9.5sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView10"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cLAracZimmetVerme"
+            android:layout_width="286dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/menu_button_design"
+            app:layout_constraintEnd_toStartOf="@+id/cLAracZimmetAlma"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="18dp"
+                android:layout_height="12.4dp"
+                android:layout_marginStart="87.8dp"
+                android:src="@drawable/vector"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7.5dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:text="Araç Zimmet Verme"
+                android:textColor="#ffffff"
+                android:textSize="9.5sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cLAracZimmetAlma"
+            android:layout_width="286dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/menu_button_design"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="18dp"
+                android:layout_height="12.4dp"
+                android:layout_marginStart="87.8dp"
+                android:src="@drawable/vector"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7.5dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:text="Araç Zimmet Alma"
+                android:textColor="#ffffff"
+                android:textSize="9.5sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cLAracDegisimi"
+            android:layout_width="286dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/menu_button_design"
+            app:layout_constraintEnd_toStartOf="@+id/cLAracBilgisiGirisi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cLAracZimmetVerme">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="18dp"
+                android:layout_height="16.4dp"
+                android:layout_marginStart="87.8dp"
+                android:src="@drawable/vector_3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7.5dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:text="Araç Değişimi"
+                android:textColor="#ffffff"
+                android:textSize="9.5sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView9"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

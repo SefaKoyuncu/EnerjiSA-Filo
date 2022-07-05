@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cLayoutAracZimmet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AracZimmetAlmaFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="660dp"
+        android:layout_height="399.5dp"
+        android:background="@drawable/card_design"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonZimmetTamamla"
+            android:layout_width="286dp"
+            android:layout_height="27.5dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/button_rectangle"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="Kaydı Tamamla"
+            android:textAllCaps="false"
+            android:textSize="11.4sp"
+            app:backgroundTint="@color/blue"
+            app:layout_constraintStart_toEndOf="@+id/buttonZimmetTemizle"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout6"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout6"
+            android:layout_width="286.1dp"
+            android:layout_height="38.2dp"
+            android:layout_marginStart="17.9dp"
+            android:layout_marginTop="2.7dp"
+            android:background="@drawable/password_rectangle"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout3"
+            app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+            <EditText
+                android:id="@+id/editTextZimmetEhliyet"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:backgroundTint="#1AFFFFFF"
+                android:fontFamily="@font/roboto"
+                android:hint="Ehliyet sınıf bilgisi girin"
+                android:maxLength="3"
+                android:paddingLeft="12.7dp"
+                android:textColor="@color/edittext_textcolor"
+                android:textColorHint="@color/edittext_textcolor"
+                android:textSize="9.5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view8"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="1dp"
+                android:layout_height="18.1dp"
+                android:layout_marginStart="11.4dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView16"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="11.9dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/group_13_4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17.9dp"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/roboto"
+            android:text="Ehliyet Sınıfı  *:"
+            android:textColor="@color/edittext_title"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout3"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17.9dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto"
+            android:text="Araç Alma Tarihi  *:"
+            android:textColor="@color/edittext_title"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="286.1dp"
+            android:layout_height="38.2dp"
+            android:layout_marginStart="17.9dp"
+            android:layout_marginTop="2.5dp"
+            android:background="@drawable/password_rectangle"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+            app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+            <EditText
+                android:id="@+id/editTextZimmetAracAlmaTarihi"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:backgroundTint="#1AFFFFFF"
+                android:fontFamily="@font/roboto"
+                android:hint="____ / ____ / ________"
+                android:inputType="date"
+                android:paddingLeft="12.7dp"
+                android:textColor="@color/edittext_textcolor"
+                android:textColorHint="@color/edittext_textcolor"
+                android:textSize="9.5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view7"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="1dp"
+                android:layout_height="18.1dp"
+                android:layout_marginStart="11.4dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView15"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="11.9dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/group_13_3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17.9dp"
+            android:layout_marginTop="19.5dp"
+            android:fontFamily="@font/roboto"
+            android:text="Araç Plakası  *:"
+            android:textColor="@color/edittext_title"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout5"
+            android:layout_width="286.1dp"
+            android:layout_height="38.2dp"
+            android:layout_marginStart="17.9dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/password_rectangle"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+            <EditText
+                android:id="@+id/editTextZimmetAracPlakası"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:backgroundTint="#1AFFFFFF"
+                android:fontFamily="@font/roboto"
+                android:hint="Zimmet alınan aracın plakasını girin"
+                android:maxLength="8"
+                android:maxLines="1"
+                android:paddingLeft="12.7dp"
+                android:textColor="@color/edittext_textcolor"
+                android:textColorHint="@color/edittext_textcolor"
+                android:textSize="9.5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view6"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="1dp"
+                android:layout_height="18.1dp"
+                android:layout_marginStart="11.4dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView14"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="11.9dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/group_13_5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="14.8dp"
+            android:fontFamily="@font/roboto"
+            android:text="Kullanım Amacı :"
+            android:textColor="@color/edittext_title"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="286.1dp"
+            android:layout_height="38.2dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="2.5dp"
+            android:background="@drawable/password_rectangle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+            <EditText
+                android:id="@+id/editTextZimmetKullanımAmacı"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:backgroundTint="#1AFFFFFF"
+                android:fontFamily="@font/roboto"
+                android:hint="Kullanım amacı belirtin"
+                android:paddingLeft="12.7dp"
+                android:textColor="@color/edittext_textcolor"
+                android:textColorHint="@color/edittext_textcolor"
+                android:textSize="9.5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view4"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="1dp"
+                android:layout_height="18.1dp"
+                android:layout_marginStart="11.4dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView13"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="11.9dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/group_13_2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="286.1dp"
+            android:layout_height="38.2dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="2.5dp"
+            android:background="@drawable/password_rectangle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+            <EditText
+                android:id="@+id/editTextZimmetSicil"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:backgroundTint="#1AFFFFFF"
+                android:fontFamily="@font/roboto"
+                android:hint="10 haneli sicil numarasını giriniz"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:paddingLeft="12.7dp"
+                android:textColor="@color/edittext_textcolor"
+                android:textColorHint="@color/edittext_textcolor"
+                android:textSize="9.5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view5"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="1dp"
+                android:layout_height="18.1dp"
+                android:layout_marginStart="11.4dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView2_1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView2_1"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="11.9dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/group_13_0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="286.1dp"
+            android:layout_height="38.2dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="2.3dp"
+            android:background="@drawable/rectangle_blueframe"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="0.6dp"
+                android:layout_height="18.1dp"
+                android:layout_marginStart="11.7dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="12.4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/group_1" />
+
+
+            <EditText
+                android:id="@+id/editTextZimmetSirketKodu"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/roboto"
+                android:hint="Şirket kodunu girin"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingLeft="12.7dp"
+                android:textColor="@color/edittext_textcolor"
+                android:textColorHint="@color/edittext_textcolor"
+                android:textSize="9.5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view3"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageViewZimmetKapat"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="35dp"
+            android:src="@drawable/fi_rr_cross"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/roboto"
+            android:lineSpacingExtra="1sp"
+            android:text="Araç Zimmet Alma Ekranı"
+            android:textColor="@color/title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="8.5dp"
+            android:fontFamily="@font/roboto"
+            android:lineSpacingExtra="-2sp"
+            android:text="Bu panelden aracı zimmetleyebilirsiniz"
+            android:textColor="@color/subtitle_2"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto"
+            android:text="Şirket Kodu :"
+            android:textColor="@color/edittext_title"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto"
+            android:text="Sürücünün Sicili  *:"
+            android:textColor="@color/edittext_title"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+        <Button
+            android:id="@+id/buttonZimmetTemizle"
+            android:layout_width="286dp"
+            android:layout_height="27.5dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="14.8dp"
+            android:background="@drawable/button_rectangle"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="Temizle"
+            android:textAllCaps="false"
+            android:textSize="11.4sp"
+            app:backgroundTint="@color/button_temizle_color_"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="(*) Doldurulması zorunlu alanlar."
+            android:textColor="#a4a4a4"
+            android:textSize="9.5sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonZimmetTemizle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

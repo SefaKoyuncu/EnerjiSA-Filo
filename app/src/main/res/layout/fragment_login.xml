@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cLayoutLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="350dp"
+        android:layout_height="399.5dp"
+        android:background="@drawable/card_design"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textviewSifremiUnuttum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.5dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="end"
+            android:text="Şifrenizi mi unuttunuz?"
+            android:textColor="@color/blue"
+            android:textSize="9.5sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonGirisYap" />
+
+        <TextView
+            android:id="@+id/textViewBeniHatirla2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="Bu girişi hatırla"
+            android:textColor="@color/remember_me"
+            android:textSize="9.5sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/checkBox2"
+            app:layout_constraintTop_toBottomOf="@+id/buttonGirisYap" />
+
+        <Button
+            android:id="@+id/buttonGirisYap"
+            android:layout_width="286dp"
+            android:layout_height="27.5dp"
+            android:layout_marginTop="14.8dp"
+            android:background="@drawable/button_rectangle"
+            android:fontFamily="@font/roboto"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="Giriş Yap"
+            android:textAlignment="gravity"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="11.4sp"
+            app:backgroundTint="@color/blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="286.1dp"
+            android:layout_height="38.2dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="2.7dp"
+            android:background="@drawable/password_rectangle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView41">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="246dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:passwordToggleEnabled="true">
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/imageViewSifreyiGosterGizle"
+                android:layout_width="21dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="12.1dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/visibility_off" />
+
+            <EditText
+                android:id="@+id/editTextZimmetKullanımAmacı"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#1AFFFFFF"
+                android:fontFamily="@font/roboto"
+                android:hint="********************"
+                android:paddingLeft="12.7dp"
+                android:password="true"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/textcolor"
+                android:textSize="9.5sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewSifreyiGosterGizle"
+                app:layout_constraintStart_toEndOf="@+id/view4"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="Deprecated,TouchTargetSizeCheck" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="1dp"
+                android:layout_height="18.1dp"
+                android:layout_marginStart="11.4dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView2_1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView2_1"
+                android:layout_width="12.9dp"
+                android:layout_height="17.2dp"
+                android:layout_marginStart="11.9dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/group_13" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/roboto"
+            android:text="Şifreniz :"
+            android:textColor="@color/title"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="286.1dp"
+            android:layout_height="38.2dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="2.3dp"
+            android:background="@drawable/rectangle_blueframe"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView40">
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="1dp"
+                android:layout_height="18.1dp"
+                android:layout_marginStart="11.7dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="12.1dp"
+                android:layout_height="14.3dp"
+                android:layout_marginStart="12.4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/group" />
+
+
+            <EditText
+                android:id="@+id/editTextZimmetSirketKodu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/roboto"
+                android:hint="example@alanadi.com"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="12.7dp"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/textcolor"
+                android:textSize="9.5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view3"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/roboto"
+            android:text="Kullanıcı adı ya da mail adresiniz :"
+            android:textColor="@color/title"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8.5dp"
+            android:fontFamily="@font/roboto"
+            android:text="Panele ulaşmak için lütfen giriş yapınız."
+            android:textColor="@color/subtitle"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Yeniden hoşgeldiniz!"
+            android:textColor="@color/title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView37" />
+
+        <ImageView
+            android:id="@+id/imageView37"
+            android:layout_width="196.5dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="37.5dp"
+            android:src="@drawable/enerjisalogo_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            style="@android:style/Widget.DeviceDefault.Light.CompoundButton.CheckBox"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="2dp"
+            android:buttonTint="#1d1d1b"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewBeniHatirla2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewBeniHatirla2"
+            tools:ignore="TouchTargetSizeCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
